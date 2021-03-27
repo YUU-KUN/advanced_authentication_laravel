@@ -20,6 +20,7 @@ class CreatePetugasTable extends Migration
             $table->enum('role', ['admin', 'petugas']);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('google_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

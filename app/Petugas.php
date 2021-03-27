@@ -17,7 +17,7 @@ class Petugas extends Authenticatable
     protected $table = 'petugas';
     protected $guard = 'admin';
 
-    protected $fillable = ['name', 'email', 'password', 'role'];
+    protected $fillable = ['name', 'email', 'password', 'role', 'google_id'];
 
     protected $hidden = [
         'password', 'remember_token',
